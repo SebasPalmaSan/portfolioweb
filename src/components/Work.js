@@ -31,7 +31,6 @@ const Work = ({ title, dark, id }) => {
 const useStyles = makeStyles((theme) => ({
   section: {
       minHeight:"100vh",
-
   },
   sectiondark:{
       backgroundColor:"#333",

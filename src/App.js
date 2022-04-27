@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Work from './components/Work';
@@ -13,6 +14,7 @@ function App(){
       <Skills id="skills" title="Habilidades" dark={false} />
       <Work id="work" title=" Mis Proyectos" dark={true} />
       <Contact id="contact" title="Contactame" dark={false} />
+      <Footer />
     </div>
     );
 }

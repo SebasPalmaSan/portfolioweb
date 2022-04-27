@@ -17,7 +17,6 @@ const Skills = ({ title, dark, id }) => {
 const useStyles = makeStyles((theme) => ({
   section: {
       minHeight:"100vh",
-
   },
   sectiondark:{
       backgroundColor:"#f4f4f4",

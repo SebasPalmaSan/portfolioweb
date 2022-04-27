@@ -1,104 +1,79 @@
-import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core';
-import React, { useState } from 'react'
+import React from 'react';
+import Linkedin from '../images/linkedin.jpg'
+import Github from '../images/github.jpg'
+import { Card, CardContent, CardMedia, Grid, Link, makeStyles, Typography } from '@material-ui/core';
 
-const Contact = ({ title, dark, id }) => {
+
+const Contact = ({title, dark, id}) => {
   const classes = useStyles();
-  const [ value, setValue ] = useState("tu mensaje");
-  const handleChange = (e) => {
-    setValue(e.target.value)
-  }
+  const contacto = [
+    {
+        title: 'Linkedin',
+        image: Linkedin,
+        link: 'https://www.linkedin.com/in/sebastian-esteban-palma-s%C3%A1nchez-8707aa12a',
+    },
+    {
+        title: 'GitHub',
+        image: Github,
+        link: 'https://github.com/SebasPalmaSan',
+    }
+]
   return (
-    <div className={`${classes.section} ${dark && classes.sectiondark}`}>
-      <div className={classes.sectioncontent} id={id}>
-           <Typography variant="h3">{title}</Typography>
-           <Paper className={classes.root}>
-             <div className={classes.titlechoices}>
-               <Typography variant="h5">Hola! ponete en contacto conmigo!</Typography>
-               <div className={classes.choices}>
-                 <span>Dejame tu mensaje</span>
-                 <Radio 
-                    value="tu mensaje"
-                    checked={value === "tu mensaje"}
-                    color="primary"
-                    onChange={handleChange}
-                 />
-                 <span>Presupuesto</span>
-                 <Radio 
-                    value="Presupuesto"
-                    checked={value === "Presupuesto"}
-                    color="primary"
-                    onChange={handleChange}
-                 />
-               </div>
-             </div>
-             <form className={classes.formulario} Validate autoComplete="off">
-               <TextField label="Nombre"/>
-               <TextField label="Apellido"/>
-               <TextField label="Email"/>
-               {
-                 value === "Presupuesto" ? (
-                   <>
-                   <TextField label="Servicio Solicitado"/>
-                   <TextField label="Presupuesto Estimado"/>
-                   </>
-                 ) : null
-               }
-               <TextField label="Tu Mensaje"/>
-             </form>
-             <Button variant="contained">Enviar</Button>
-           </Paper>
-      </div>
+  <div className={`${classes.section} ${dark && classes.sectiondark}`}>
+    <div className={classes.sectioncontact} id={id}>
+      
+      <Typography variant="h3">{title}</Typography>
+           <Grid container className={classes.grid}>
+            { 
+              contacto.map(({title, image,link}, index)=>(
+                <Grid item key={index} xs={12} sm={6} md={4}>
+                  <Card className={classes.card}>
+                    <CardMedia image={image} className={classes.caratula} titulo="caratula"/>
+                    <CardContent>
+                      <Link href={link} color="primary" target="_blank" rel="noopener noreferrer">
+                        {title}
+                      </Link>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))
+            }
+           </Grid>
     </div>
+  </div>
   )
 }
+
 const useStyles = makeStyles((theme) => ({
   section: {
-      minHeight:"100vh",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-start",
-      alignItems: "center",
-
+    minHeight:"40vh",
   },
   sectiondark:{
-      backgroundColor:"#f4f4f4",
-      color:"#333",
+    backgroundColor:"#f4f4f4",
+    color:"#333",
+  }, 
+  sectioncontact: {
+    maxWidth: "80vw",
+    margin: "0 auto",
+    
+    padding: theme.spacing(2),
   },
-  root: {
-    marginTop: theme.spacing(4),
-    backgroundColor:"#c34f0cbe",
-    color: "#f4f4f4",
-    fontSize: "1.5rem",
-    maxWidth: "500px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    padding: theme.spacing(5),
-    "& Button": {
-      backgroundColor: "#f4f4f4",
-      color: "#c34f0cbe",
-      fontWeight: 800,
-      fontSize: "1.3rem",
-      marginTop: theme.spacing(5)
-    },
-    "& Button:hover" : {
-      backgroundColor: "#c34f0cbe",
-      color: "#f4f4f4"
-    }
+  title: {
+    
   },
-  sectioncontent: {
-      maxWidth: "80vw",
-      margin: "0 auto",
-      color:"#333",
+  grid:{
+    marginTop: theme.spacing(2),
   },
-  titlechoices: {
-    "& h5" : {
-      marginTop: theme.spacing(5)
-    }
+  card: {
+    maxWidth: 345,
+    minHeight: 275,
+    margin: theme.spacing(2),
+    borderRadius: "50px",
+    border: "5px solid #263238",
   },
-  choices: {
-    display: "flex",
-    flexDirection: "column"
+  caratula:{
+    height: 200,
+    paddingTop: '56.25%', //16:9
   }
 }));
 

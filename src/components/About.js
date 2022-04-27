@@ -42,8 +42,7 @@ const About = ({ title, dark, id }) => {
                        </a>
                        </Button>
                </CardActions>
-
-           </Card>
+            </Card>
         </div>
     </div>
   )
@@ -62,17 +61,18 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(5),
     },
     card: {
-        height: "80vh",
+        height: "70vh",
         display: "flex",
         marginTop: theme.spacing(5),
         position: "relative",
     },
     cardmedia: {
-        with: "20%",
-        height: "20vh",
+        width: "40vw",
+        height: "60vh",
         objectFit: "cover",
         borderRadius: "10px",
-        margin: theme.spacing(15)
+        margin: theme.spacing(5),
+        border: "1px solid #263238"
     },
     cardcontent: {
         marginTop: theme.spacing(2),
