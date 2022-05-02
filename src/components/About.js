@@ -18,14 +18,14 @@ const About = ({ title, dark, id }) => {
                      textStyle={{fontSize: "2.5rem", fontWeight: "bold", color: "#c34f0cbe"}}
                      startDelay={100}
                      cursorColor="#333"
-                     typeSpeed={50}
+                     typeSpeed={100}
                    />
                    <TypeWriterEffect
                      text="Soy Developer Web Full Stack Jr"
                      textStyle={{fontSize: "1.5rem", fontWeight: "500", color: "#546e7a"}}
                      startDelay={2500}
                      cursorColor="#333"
-                     typeSpeed={50}
+                     typeSpeed={100}
                    />
                    <Typography variant="h6" color="textSecondary">
                      Nací en 1986, en el sur de la provincia de Buenos Aires.
