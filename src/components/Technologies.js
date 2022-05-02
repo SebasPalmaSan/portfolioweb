@@ -78,6 +78,9 @@ const useStyles = makeStyles((theme) => ({
         color: "#263238",
         padding: "5px 15px",
         maxWidth: "30vw",
+        [theme.breakpoints.down("sm")]:{
+            display: "none",
+        },
     }
   }));
   

@@ -21,7 +21,7 @@ const About = ({ title, dark, id }) => {
                      typeSpeed={50}
                    />
                    <TypeWriterEffect
-                     text="Soy React Frontend Developer Trainee y Programador Web Full Stack"
+                     text="Soy Developer Web Full Stack Jr"
                      textStyle={{fontSize: "1.5rem", fontWeight: "500", color: "#546e7a"}}
                      startDelay={2500}
                      cursorColor="#333"
@@ -72,7 +72,11 @@ const useStyles = makeStyles((theme) => ({
         objectFit: "cover",
         borderRadius: "10px",
         margin: theme.spacing(5),
-        border: "1px solid #263238"
+        border: "1px solid #263238",
+        [theme.breakpoints.down("sm")]:{
+            display: "none",
+        },
+
     },
     cardcontent: {
         marginTop: theme.spacing(2),
