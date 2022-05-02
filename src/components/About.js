@@ -29,7 +29,7 @@ const About = ({ title, dark, id }) => {
                    />
                    <Typography variant="h6" color="textSecondary">
                      Nací en 1986, en el sur de la provincia de Buenos Aires.
-                     Soy un apasionado por la música!, estudie varios años en el Conservatorio de Bahía Blanca, Canto Lírico y camarístico.
+                     Soy un apasionado por la música!, estudié varios años en el Conservatorio de Música de Bahía Blanca la carrera de "Canto Lírico y Camarístico".
                      De grande adquirí una nueva pasión por la tecnología y la programación.
                      Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales, 
                      siempre tengo la mejor disposición para la realización de mis labores.
