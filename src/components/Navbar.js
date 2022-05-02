@@ -99,7 +99,12 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "contain",
     "&:hover": {
       cursor: 'pointer',
-    }
+    },
+    [theme.breakpoints.down("sm")]:{
+      marginLeft: "0",
+      margin: "0 auto",
+      height: "4.5rem",
+    },
   },
   iconcolour:{
     color: "#c34f0cbe",

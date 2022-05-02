@@ -59,6 +59,10 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: "80vw",
         margin: "0 auto",
         padding: theme.spacing(5),
+        [theme.breakpoints.down("sm")]:{
+            maxWidth: "98vw",
+        },
+
     },
     card: {
         height: "70vh",
