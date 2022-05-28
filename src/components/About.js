@@ -2,7 +2,7 @@ import { Card, CardContent, CardMedia, CardActions, Button, makeStyles, Typograp
 import React from 'react'
 import Seba from '../images/seba1.jpg'
 import TypeWriterEffect from 'react-typewriter-effect'
-import pdf from '../images/SEBASTIÁN-ESTEBAN-PALMA-SÁNCHEZ.2022.pdf'
+import pdf from '../images/SEBASTIÁN-ESTEBAN-PALMA-SÁNCHEZ-2022.pdf'
 
 const About = ({ title, dark, id }) => {
   const classes = useStyles();
