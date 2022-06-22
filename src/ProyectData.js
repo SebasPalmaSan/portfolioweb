@@ -1,6 +1,6 @@
 import MercadoLiebre from './images/MLiebre.jpg'
 import TuLista from './images/tulista.jpg'
-import GifExpertApp from './images/GifExpertApp.'
+import GifExpertApp from './images/gifExpertApp.jpg'
 
 const ProyectData = [
     {

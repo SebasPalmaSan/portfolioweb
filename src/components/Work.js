@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     maxWidth: 345,
     minHeight: 275,
-    margin: theme.spacing(2)
+    margin: theme.spacing(4)
   },
   caratula:{
     height: 200,
