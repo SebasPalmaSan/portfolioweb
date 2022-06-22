@@ -19,7 +19,7 @@ const ProyectData = [
         title: 'Gif App',
         image: GifExpertApp,
         description: '',
-        link: 'https://gifappexpert.netlify.app',
+        link: 'https://gif-expert-sebastian.netlify.app/',
     }
    
 ]
