@@ -1,5 +1,6 @@
 import MercadoLiebre from './images/MLiebre.jpg'
 import TuLista from './images/tulista.jpg'
+import GifExpertApp from './images/GifExpertApp.'
 
 const ProyectData = [
     {
@@ -13,6 +14,12 @@ const ProyectData = [
         image: TuLista,
         description: '',
         link: 'https://tulista.netlify.app/',
+    },
+    {
+        title: 'Gif App',
+        image: GifExpertApp,
+        description: '',
+        link: 'https://gifappexpert.netlify.app',
     }
    
 ]
