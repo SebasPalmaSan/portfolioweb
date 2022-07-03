@@ -2,7 +2,7 @@ import MercadoLiebre from './images/MLiebre.jpg'
 import TuLista from './images/tulista.jpg'
 import GifExpertApp from './images/gifExpertApp.jpg'
 import ToDoList from './images/to-do-list.jpg'
-import ToDoListFirestore from './images/to-do-list-firestore.jpg'
+//import ToDoListFirestore from './images/to-do-list-firestore.jpg'
 
 const ProyectData = [
     {
@@ -29,12 +29,7 @@ const ProyectData = [
         description: '',
         link: 'https://to-do-list-sebastian.netlify.app/',
     },
-    {
-        title: 'To do List + Firestore',
-        image: ToDoListFirestore,
-        description: '',
-        link: 'https://crud-udemy-react-fa16d.web.app/',
-    }
+    
    
 ]
 export default ProyectData
